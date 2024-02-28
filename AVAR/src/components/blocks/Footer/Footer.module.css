@@ -1,0 +1,130 @@
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 114px 352px;
+    background-color: rgb(0, 3, 34);
+    height: 320px;
+}
+
+.schaffenPerfektion {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    color: white;
+}
+
+.schaffenPerfektion h2 {
+    font-family: 'Montserrat';
+    font-size: 40px;
+}
+
+.schaffenPerfektion p {
+    font-family: 'Montserrat';
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.schaffenPerfektion_text {
+    display: flex;
+    width: 288px;
+}
+
+.socialNetworks {
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.kontaktInformationen {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    color: white;
+}
+
+.kontaktInformationen_title {
+    display: flex;
+}
+
+.kontaktInformationen_title h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+    color: white;
+    font-weight: 400;
+}
+
+.kontaktInformationen_adress {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.kontaktInformationen_adress p {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.schnelleLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.schnelleLinks_title {
+    display: flex;
+}
+
+.schnelleLinks_title h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+    color: white;
+    font-weight: 400;
+}
+
+@media (min-width: 320px) and (max-width: 435px) {
+    footer {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0;
+        padding: 24px 30px;
+        height: auto;
+    }
+
+    .schaffenPerfektion {
+        width: 200px;
+        gap: 10px;
+    }
+
+    .schaffenPerfektion_text p {
+        font-size: 12px;
+        width: 200px;
+    }
+
+    .kontaktInformationen {
+        gap: 15px;
+    }
+
+    .row {
+        gap: 24px;
+        align-items: center;
+    }
+
+    .kontaktInformationen_title h2 {
+        font-size: 18px;
+        font-weight: 0;
+    }
+
+    .schnelleLinks_title h2 {
+        font-size: 18px;
+    }
+
+
+    .kontaktInformationen_adress p {
+        font-size: 14px;
+    }
+
+}

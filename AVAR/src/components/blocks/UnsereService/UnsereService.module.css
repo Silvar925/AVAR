@@ -1,0 +1,46 @@
+.unsereServicesContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 160px 80px;
+}
+
+.unsereServicesContainer_left {
+    display: flex;
+}
+
+.unsereServicesContainer_right {
+    display: flex;
+}
+
+.unsereServicesContainer_right h1 {
+    display: flex;
+    font-family: "Bebas Neue";
+    gap: 0;
+    flex-direction: column;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    white-space: nowrap;
+}
+
+.unsereServicesContainer_right h1 span:nth-child(1) {
+    color: rgb(229, 86, 69);
+    font-size: 72px;
+}
+
+.unsereServicesContainer_right h1 span:nth-child(2) {
+    color: black;
+    font-size: 91px;
+}
+
+@media (min-width: 320px) and (max-width: 435px) {
+    .unsereServicesContainer {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+}

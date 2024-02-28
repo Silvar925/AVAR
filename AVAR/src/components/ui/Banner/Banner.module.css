@@ -1,0 +1,189 @@
+.bannerContainer {
+    display: flex;
+    flex-direction: column;
+    height: 856px;
+}
+
+.textContainer {
+    display: flex;
+    gap: 80px;
+    /* margin: 190px 232px; */
+    padding: 190px 232px;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+}
+
+.title h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue';
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.text {
+    display: flex;
+    width: 457px;
+}
+
+.text p {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.buttonsContainer {
+    margin-top: 44px;
+    display: flex;
+    gap: 10px;
+}
+
+.socialNetwork {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.address {
+    display: flex;
+    gap: 10px;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+.iconsContainer {
+    display: flex;
+    gap: 40px;
+}
+
+.iconsContainer img {
+    height: 20px;
+    width: 20px;
+}
+
+.additionalText {
+    padding: 10px;
+    background: rgba(229, 86, 69, 0.4);
+    width: 427px;
+
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.textContainerUp {
+    display: flex;
+    gap: 13px;
+    /* flex-direction: column; */
+}
+
+.temp {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.additionalImage img {
+    width: 518px;
+    height: 683px;
+}
+
+
+@media (min-width: 320px) and (max-width: 435px) {
+    .bannerContainer {
+        padding-top: 17px;
+        width: 100%;
+        height: 700px;
+    }
+
+    .textContainer {
+        padding: 52px 27px;
+        gap: 16px;
+    }
+
+    .textContainerUp {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .buttonsContainer {
+        flex-direction: column;
+    }
+
+    .text {
+        display: flex;
+        width: auto;
+    }
+
+    .text p {
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .title h1 {
+        width: 100px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .socialNetwork {
+        gap: 18px;
+    }
+
+    .additionalText {
+        width: 254px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .bannerContainer {
+        padding-top: 17px;
+        width: 100%;
+        height: 700px;
+    }
+
+    .textContainer {
+        padding: 52px 27px;
+        gap: 16px;
+    }
+
+    .textContainerUp {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .buttonsContainer {
+        flex-direction: column;
+    }
+
+    .text {
+        display: flex;
+        width: auto;
+    }
+
+    .text p {
+        width: 600px;
+        font-size: 14px;
+    }
+
+    .title h1 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .socialNetwork {
+        gap: 18px;
+    }
+}

@@ -1,0 +1,191 @@
+header {
+    display: flex;
+    height: 85px;
+    align-items: center;
+    margin: 38px 229px;
+}
+
+
+header img {
+    height: 52px;
+}
+
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 42px;
+    margin-left: 242px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.btnCallUS {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 104px;
+    height: 44px;
+
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.dropdown {
+    display: none;
+}
+
+
+@media (min-width: 320px) and (max-width: 435px) {
+    header {
+        margin: 0;
+        margin-left: 19px;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+
+    header nav ul {
+        display: none;
+        margin-left: 0px;
+    }
+
+    .btnCallUS {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    /* Скриване на съдържанието на падащия списък по подразбиране */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        /* z-index: 1; */
+        border-radius: 10px;
+    }
+
+    /* Стилове на бутона, които ще отворят/затворят падащия списък */
+    .dropbtn {
+        /* background-color: #4CAF50; */
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    /* Стилове, които ще активират падащия списък, когато бутона е натиснат */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Стилове на връзките в падащия списък */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Montserrat';
+    }
+
+    /* Стилове на връзките в падащия списък при ховър (активиране на мишката) */
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        margin: 0;
+        margin-left: 19px;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+
+    header nav ul {
+        display: none;
+        margin-left: 0px;
+    }
+
+    .btnCallUS {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    /* Скриване на съдържанието на падащия списък по подразбиране */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        /* z-index: 1; */
+        border-radius: 10px;
+    }
+
+    /* Стилове на бутона, които ще отворят/затворят падащия списък */
+    .dropbtn {
+        /* background-color: #4CAF50; */
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    /* Стилове, които ще активират падащия списък, когато бутона е натиснат */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Стилове на връзките в падащия списък */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Montserrat';
+    }
+
+    /* Стилове на връзките в падащия списък при ховър (активиране на мишката) */
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+}

@@ -1,0 +1,28 @@
+.whiteButton {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 67px;
+}
+
+.whiteButton img {
+    height: 30px;
+    width: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 435px) {
+    .redButton {
+        border-radius: 67px;
+        background-color: rgb(229, 86, 69);
+        color: white;
+        height: auto;
+        width: auto;
+        text-align: center;
+
+        font-family: 'Montserrat';
+        font-size: 14px;
+    }
+}

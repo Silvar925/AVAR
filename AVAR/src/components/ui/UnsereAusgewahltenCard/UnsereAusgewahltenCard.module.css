@@ -1,0 +1,53 @@
+.card {
+    display: flex;
+    height: 586px;
+    gap: 36px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.info {
+    display: flex;
+    gap: 15px;
+    width: 341px;
+    flex-direction: column;
+}
+
+.info h1 {
+    color: rgb(0, 0, 0);
+    font-family: "Bebas Neue";
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.info p {
+    font-family: 'Montserrat';
+    line-height: 20px;
+    font-weight: 400;
+}
+
+@media (min-width: 320px) and (max-width: 435px) {
+    .card {
+        text-align: center;
+        height: 463px;
+    }
+
+    .info h1 {
+        color: rgb(0, 0, 0);
+        font-family: "Bebas Neue";
+        font-size: 26px;
+        font-weight: 300;
+    }
+
+    .info p {
+        font-family: 'Montserrat';
+        line-height: 18px;
+        font-weight: 400;
+    }
+
+    .card img {
+        width: 343px;
+    }
+
+}

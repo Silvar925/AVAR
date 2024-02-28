@@ -1,0 +1,259 @@
+.yourInterestContainer {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FBFBFB;
+}
+
+.yourInterestContainer_center {
+  display: flex;
+  gap: 44px;
+  flex-direction: column;
+
+  padding-left: 86px;
+  margin-top: 47px;
+}
+
+.yourInterestContainer_center_title h1 {
+  color: rgb(0, 0, 0);
+  font-family: "Bebas Neue";
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.yourInterestContainer_center_text {
+  width: 547px;
+  height: 239px;
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.yourInterestContainer_center_text p {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home {
+  position: absolute;
+  right: 68px;
+  height: 777px;
+  width: 1245px;
+  top: -60px;
+}
+
+.forest {
+  width: 960px;
+  height: 634px;
+}
+
+.yourInterestContainer_right {
+  position: relative;
+}
+
+
+.yourInterestContainer a {
+  padding: 20px;
+  width: 236px;
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.warumWahlenContainer {
+  margin-top: 120px;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.warumWahlenContainerTitle h1 {
+  color: rgb(0, 0, 0);
+  font-family: 'Bebas Neue';
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.warumWahlenContainerText {
+  width: 476px;
+}
+
+.warumWahlenContainerText p {
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 47px;
+}
+
+.statisticsContainer {
+  display: flex;
+  align-items: center;
+  height: 1100px;
+  flex-direction: column-reverse;
+  background-image: url("statistics/statisticsBackground.png");
+}
+
+.statisticsCardList {
+  display: flex;
+  gap: 47px;
+  padding-bottom: 70px;
+}
+
+.UnsereAusgewahltenContainer {
+  margin-top: 80px;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.UnsereAusgewahltenContainerTittle h1 {
+  color: rgb(0, 0, 0);
+  font-family: 'Bebas Neue';
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.UnsereAusgewahltenCardList {
+  display: flex;
+  gap: 40px;
+}
+
+@media (min-width: 320px) and (max-width: 435px) {
+  .banner {
+    padding: 20px;
+    height: 670px;
+  }
+
+  .bannerContainer_left {
+    margin-left: 0;
+    padding-top: 42px;
+  }
+
+  .bannerContainer_left_top h1 {
+    font-size: 24px;
+    width: 100px;
+    line-height: 25px;
+  }
+
+  .bannerContainer_left_bottom_text {
+    font-size: 16px;
+    width: 80%;
+  }
+
+  .buttonBox {
+    flex-direction: column;
+  }
+
+  .addressSocialNetworks {
+    margin-top: 0;
+    gap: 18px;
+    margin-left: 30px;
+  }
+
+  .home {
+    width: 347px;
+    height: 221px;
+    right: -100px;
+    top: 103px;
+  }
+
+  .forest {
+    width: 123px;
+    height: 310px;
+  }
+
+  .yourInterestContainer {
+    gap: 0;
+    padding: 0;
+    /* justify-content: flex-start; */
+  }
+
+  .yourInterestContainer_center {
+    margin-top: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  .yourInterestContainer_left img {
+    width: 33px;
+    height: 310px;
+  }
+
+  .yourInterestContainer_center_title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .yourInterestContainer_center_title h1 {
+    font-size: 18px;
+  }
+
+  .yourInterestContainer_center_text {
+    gap: 0;
+    font-size: 12px;
+    width: 102px;
+    /* height: 143px; */
+  }
+
+  .yourInterestContainer_center_text p {
+    position: absolute;
+    padding-right: 150px;
+  }
+
+  .yourInterestContainer_btn {
+    display: none;
+  }
+
+  .warumWahlenContainer {
+    padding: 0px 20px;
+  }
+
+  .warumWahlenContainerText {
+    width: 100%;
+  }
+
+  .cardList {
+    grid-gap: 12px !important;
+  }
+
+  .statisticsContainer {
+    height: 442px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .statisticsCardList {
+    gap: 10px;
+  }
+
+  .UnsereAusgewahltenContainer {
+    gap: 10px;
+  }
+
+  .UnsereAusgewahltenContainerTittle {
+    text-align: center;
+  }
+
+  .UnsereAusgewahltenContainerTittle h1 {
+    font-size: 32px;
+  }
+
+  .UnsereAusgewahltenCardList {
+    flex-direction: column;
+  }
+}

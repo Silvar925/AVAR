@@ -1,0 +1,89 @@
+.unsereGrundwerte {
+    margin-top: 80px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listCard {
+    display: flex;
+    gap: 47px;
+}
+
+.unsereGrundwerteTitle {
+    display: flex;
+}
+
+.unsereGrundwerteTitle {
+    color: rgb(0, 0, 0);
+    font-family: 'Bebas Neue';
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.unsereGrundwerteText {
+    display: flex;
+    width: 548px;
+}
+
+.unsereGrundwerteText p {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.einStarkesContainer {
+    margin-top: 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.einStarkesContainerTitle {
+    text-align: center;
+    line-height: 48px;
+    width: 426px;
+}
+
+.einStarkesContainerTitle h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Bebas Neue';
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.einStarkesContainerText {
+    display: flex;
+}
+
+.einStarkesContainerText {
+    width: 547px;
+}
+
+.einStarkesContainerText p {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+}
+
+.einStarkesContainerImages {
+    width: 1300px;
+    height: 601px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    background-image: url("UberPage/uber.png");
+}
+
+.einStarkesContainerListCard {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 63px
+}
