@@ -34,32 +34,32 @@ export const UberPage = () => {
                         <TranslucentCard orientation="column" tittle="200+" text="Projekte jahrlich" />
                     </div>
                 </div>
-
             </section>
 
-            <section className="unsereGrundwerte">
-                <div className="unsereGrundwerteTitle">
+            <section className="unsereGrundwerteContainer">
+                <div className="unsereGrundwerteContainerTittle">
                     <h1>Unsere Grundwerte</h1>
                 </div>
 
-                <div className="unsereGrundwerteText">
-                    <p>
-                        Unser Ziel ist Ihre Zufriedenheit und Sorglosigkeit.
-                        Dabei hoffen wirauf Ihr Vertrauen, welches wir nicht missbrauchen werden.
+                <div className="unsereGrundwerteContainerText">
+                    <p>Unser Ziel ist Ihre Zufriedenheit und Sorglosigkeit. Dabei hoffen wirauf Ihr Vertrauen,
+                        welches wir nicht missbrauchen werden.
                     </p>
-
                 </div>
 
-                <div className="listCard">
-                    {
-                        unsereGrundwerte.map((item, index) => {
-                            return (
-                                <WhiteCard row={2} titleColumn={true} text={item.text} title={item.title} icon={item.icon} />
-                            )
-                        })
-                    }
+                <div className="unsereGrundwerteListCard">
+                    <WhiteCard row={2} text="asd" icon="Rating/medal.png"  titleColumn = {true} title="asd"/>
+                    <WhiteCard row={2} text="asdasd" icon="asd" />
+                    <WhiteCard row={2} text="asdasd" icon="asd" />
                 </div>
 
+            </section>
+
+            <section className="unsereMission">
+                <div className="unsereMissionRow">
+
+                </div>
+                
             </section>
 
             <OffiziellerPartner />

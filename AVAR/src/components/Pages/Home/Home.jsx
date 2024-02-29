@@ -15,7 +15,7 @@ export const Home = () => {
         <>
             <Banner info={bannerInfo.Home} type="buttons" backgroundImage="Home" />
 
-            <section className="yourInterestContainer">
+            <section className="yourInterestContainer" style={{display: "none"}}>
                 <div className="yourInterestContainer_left">
                     <img src="Home/leftForest.png" alt="leftForest" />
                 </div>
@@ -61,7 +61,7 @@ export const Home = () => {
                     {
                         warumUnsWahlen.map((item, index) => {
                             return (
-                                <WhiteCard key={index} row={2} text={item.text} icon={item.icon} />
+                                <WhiteCard key={index} row={2} text={item.text} icon={item.icon} titleColumn = {false}/>
                             );
                         })
                     }

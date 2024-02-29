@@ -6,10 +6,10 @@ export const TranslucentCard = (props) => {
     if (props.orientation === "row") {
         styles = {
             flexDirection: "column",
-            width: "301px",
-            height: "203px"
+            // width: "301px",
+            // height: "203px"
         }
-    } else {
+    } else if (props.orientation === "column") {
         styles = {
             flexDirection: "row",
             width: "283px",

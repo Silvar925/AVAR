@@ -1,38 +1,34 @@
-.unsereGrundwerte {
+.unsereGrundwerteContainer {
     margin-top: 80px;
     display: flex;
-    gap: 24px;
+    gap: 20px;
     flex-direction: column;
     align-items: center;
 }
 
-.listCard {
-    display: flex;
-    gap: 47px;
-}
-
-.unsereGrundwerteTitle {
-    display: flex;
-}
-
-.unsereGrundwerteTitle {
+.unsereGrundwerteContainerTittle h1 {
     color: rgb(0, 0, 0);
-    font-family: 'Bebas Neue';
-    font-size: 28px;
-    font-weight: 400;
+    font-family: "Bebas Neue";
+    font-size: 48px;
+    font-weight: 300;
 }
 
-.unsereGrundwerteText {
+.unsereGrundwerteContainerText {
     display: flex;
-    width: 548px;
+    align-items: center;
+    text-align: center;
+    width: 547px;
+    height: 47px;
 }
 
-.unsereGrundwerteText p {
-    color: rgb(0, 0, 0);
+.unsereGrundwerteContainerText p {
     font-family: 'Montserrat';
     font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
+}
+
+.unsereGrundwerteListCard {
+    display: flex;
+    gap: 40px;
 }
 
 .einStarkesContainer {
@@ -86,4 +82,61 @@
     display: flex;
     gap: 10px;
     padding-bottom: 63px
+}
+
+.unsereMission {
+    display: flex;
+    flex-direction: column;
+}
+
+.unsereMissionRow {
+    display: flex;
+}
+
+
+@media (min-width: 320px) and (max-width: 435px) {
+    .einStarkesContainer {
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .einStarkesContainerImages {
+        width: 100%;
+    }
+
+    .einStarkesContainerListCard {
+        flex-direction: column;
+    }
+
+    .einStarkesContainerText {
+        width: 100%;
+    }
+
+    .einStarkesContainerText p {
+        font-size: 14px;
+    }
+
+    .einStarkesContainerTitle {
+        width: 100%;
+    }
+
+    .einStarkesContainerTitle h1 {
+        font-size: 24px;
+    }
+    
+    .unsereGrundwerteContainer {
+        margin-top: 20px;
+    }
+
+    .unsereGrundwerteContainerTittle h1 {
+        font-size: 24px;
+    }
+
+    .unsereGrundwerteContainerText {
+        width: 100%;
+    }
+
+    .unsereGrundwerteContainerText p {
+        font-size: 14px;
+    }
 }
