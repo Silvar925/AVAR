@@ -1,14 +1,14 @@
 .bannerContainer {
     display: flex;
     flex-direction: column;
-    height: 856px;
+    height: 805px;
 }
 
 .textContainer {
     display: flex;
     gap: 80px;
     /* margin: 190px 232px; */
-    padding: 190px 232px;
+    padding: 0px 231px;
     flex-direction: column;
 }
 
@@ -83,6 +83,7 @@
 .textContainerUp {
     display: flex;
     gap: 13px;
+    align-items: center;
     /* flex-direction: column; */
 }
 
@@ -93,8 +94,8 @@
 }
 
 .additionalImage img {
-    width: 518px;
-    height: 683px;
+    width: 493px;
+    height: 639px;
 }
 
 

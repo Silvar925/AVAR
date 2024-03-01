@@ -1,0 +1,134 @@
+.KomplettModernisierungContainer {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.KomplettModernisierungTittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.KomplettModernisierungTittle h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Bebas Neue';
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.KomplettModernisierungTittle p {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+}
+
+.KomplettModernisierungText {
+    display: flex;
+    width: 547px;
+}
+
+.KomplettModernisierungText p {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+}
+
+.KomplettModernisierungListCard {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.feedbackTeamContainer {
+    margin-top: 80px;
+    padding: 83px 314px;
+    display: flex;
+    height: 430px;
+    background-image: url("ProjektePage/feedBackTeamBackgroundImages.png");
+}
+
+.feedbackTeamContainerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 36px;
+    backdrop-filter: blur(4px);
+    height: 370px;
+    background: rgba(255, 255, 255, 0.5);
+
+}
+
+
+.feedbackText {
+    width: 403px;
+}
+
+.feedbackText p {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+}
+
+.authorNameContainer {
+    display: flex;
+}
+
+.authorNameContainer p {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: left;
+}
+
+@media (min-width: 320px) and (max-width: 435px) {
+    .KomplettModernisierungContainer {
+        margin-top: 50px;
+    }
+
+    .KomplettModernisierungListCard {
+        flex-direction: column;
+    }   
+
+    .KomplettModernisierungTittle {
+        width: 100%;
+    }
+
+    .KomplettModernisierungTittle h1 {
+        font-size: 34px;
+    }
+
+    .KomplettModernisierungText {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .KomplettModernisierungText p {
+        font-size: 14px;
+    }
+
+    .feedbackTeamContainer {
+        padding: 0;
+    }
+
+    .feedbackText {
+        width: 100%;
+    }
+
+    .feedbackText p {
+        font-size: 14px;
+    }
+}

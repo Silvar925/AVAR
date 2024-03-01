@@ -78,6 +78,10 @@
 
 
 @media (min-width: 320px) and (max-width: 435px) {
+    .warumWahlenContainer {
+        margin-top: 50px;
+    }
+
     .offiziellerPartnerContainer {
         padding: 0 20px;
     }
@@ -87,7 +91,7 @@
         align-items: center;
         /* justify-content: space-between; */
         padding: 12px 26px;
-        width: 100%;
+        width: 90%;
         height: 200px;
     }
 

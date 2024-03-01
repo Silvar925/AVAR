@@ -162,3 +162,30 @@ export const unsereGrundwerte = [
         icon: "Rating/city.png"
     }
 ]
+
+export const serviceStatisticCard = [
+    {
+        tittle: "BERATUNG",
+        subtitle: "01",
+        text: "Wir hören Ihnen zu und gehen auf Ihre Wünsche ein. Bei Bedarf erstellen wir Ihnen ein Innendesign durch unser Team."
+    },
+
+    {
+        tittle: "TERMIN FUR BAUSTART",
+        subtitle: "02",
+        text: "Wir vereinbaren ein Termin für den Baustart Ihres Objekt. Vorab klären wir alle Kleinigkeiten wie Schlüsselübergabe und ähnliches."
+    },
+
+    {
+        tittle: "UMSETZUNG",
+        subtitle: "03",
+        text: "Wir erzeugen Lärm und Stämmen alles ab, um dann ein zuhause aufzubauen, welches Ihnen das Gefühlt bieten soll, als wären sie im Film."
+    },
+
+    {
+        tittle: "FERTIGSTELLUNG",
+        subtitle: "04",
+        text: "Bei der Fertigstellung erwartet unser Team Sie mit einem Glas Wein in Ihrem neuen Zuhause und wünscht Sie bald wieder als Kunde bei der AVAR begrüßen zu dürfen."
+
+    }
+]

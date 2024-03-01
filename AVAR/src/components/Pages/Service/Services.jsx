@@ -1,9 +1,10 @@
 import "./Services.css"
-import { bannerInfo } from "../../data"
+import { bannerInfo, serviceStatisticCard, sieWollenEinAngebot } from "../../data"
 import { Banner } from "../../ui/Banner/Banner"
-import { sieWollenEinAngebot } from "../../data"
 import { WhiteCard } from "../../ui/WhiteCard/WhiteCard"
 import { UnserseService } from "../../blocks/UnsereService/UnsereService"
+import { TranslucentCard } from "../../ui/TranslucentCard/TranslucentCard"
+import { Footer } from "../../blocks/Footer/Footer"
 
 
 export const ServicesPage = () => {
@@ -12,7 +13,7 @@ export const ServicesPage = () => {
             <Banner info={bannerInfo.Service} type="additionalText" backgroundImage="Service" />
 
             <section className="servicesPage">
-                <UnserseService />
+                {/* <UnserseService /> */}
 
                 <section className="sieWollenEinContainer">
                     <div className="sieWollenEinTitle">
@@ -32,21 +33,35 @@ export const ServicesPage = () => {
 
                     <div className="sieWollenEinList">
                         <div className="sieWollenEinListRow">
-                            <WhiteCard row={2} text="asdasd" icon="asd" />
-                            <WhiteCard row={2} text="asdasd" icon="asd" />
-                            <WhiteCard row={2} text="asdasd" icon="asd" />
+                            <WhiteCard row={1} text="Terminvereinbarung" icon="icons/coolicon.png" titleColumn={false} />
+                            <WhiteCard row={1} text="Besichtigung" icon="icons/coolicon.png" titleColumn={false} />
+                            <WhiteCard row={1} text="Interior Design erstellen" icon="icons/coolicon.png" titleColumn={false} />
                         </div>
 
                         <div className="sieWollenEinListRow">
-                            <WhiteCard row={2} text="asdasd" icon="asd" />
-                            <WhiteCard row={2} text="asdasd" icon="asd" />
-                            <WhiteCard row={2} text="asdasd" icon="asd" />
+                            <WhiteCard row={1} text="Angebotserstellung" icon="icons/coolicon.png" titleColumn={false} />
+                            <WhiteCard row={1} text="Umsetzung" icon="icons/coolicon.png" titleColumn={false} />
+                            <WhiteCard row={1} text="Fertigstellung" icon="icons/coolicon.png" titleColumn={false} />
                         </div>
                     </div>
 
                 </section>
-
             </section>
+
+            <section className="statisticsContainer">
+                <div className="statisticsCardList">
+
+                    {
+                        serviceStatisticCard.map((item, index) => {
+                            return (
+                                <TranslucentCard orientation="column" tittle={item.tittle} subtitle={item.subtitle} text={item.text} />
+                            )
+                        })
+                    }
+                </div>
+            </section>
+
+            <Footer />
         </>
     )
 }

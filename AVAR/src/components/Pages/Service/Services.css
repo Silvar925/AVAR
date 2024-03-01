@@ -55,3 +55,69 @@
   display: flex;
   gap: 44px;
 }
+
+.statisticsContainer {
+  display: flex;
+  align-items: center;
+  height: 1100px;
+  flex-direction: column-reverse;
+  background-image: url("statistics/statisticsBackground.png");
+}
+
+.statisticsCardList {
+  display: flex;
+  gap: 47px;
+  padding-bottom: 70px;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 435px) {
+  .servicesPage {
+    display: block;
+  }
+
+  .sieWollenEinTitle {
+    width: 100%;
+  }
+
+  .sieWollenEinText {
+    width: 100%;
+  }
+
+  .sieWollenEinText p {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .sieWollenEinTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .sieWollenEinUnderTitle {
+    width: 100%;
+  }
+
+  .sieWollenEinUnderTitle p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .sieWollenEinList {
+    gap: 10px;
+  }
+
+  .sieWollenEinListRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .statisticsCardList {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

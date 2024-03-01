@@ -1,8 +1,7 @@
 import "./Uber.css"
 import { Banner } from "../../ui/Banner/Banner"
-import { bannerInfo } from "../../data"
+import { bannerInfo, unsereGrundwerte } from "../../data"
 import { Footer } from "../../blocks/Footer/Footer"
-import { unsereGrundwerte } from "../../data"
 import { WhiteCard } from "../../ui/WhiteCard/WhiteCard"
 import { TranslucentCard } from "../../ui/TranslucentCard/TranslucentCard"
 import { OffiziellerPartner } from "../../blocks/OffiziellerPartner/OffiziellerPartner"
@@ -48,9 +47,15 @@ export const UberPage = () => {
                 </div>
 
                 <div className="unsereGrundwerteListCard">
-                    <WhiteCard row={2} text="asd" icon="Rating/medal.png"  titleColumn = {true} title="asd"/>
-                    <WhiteCard row={2} text="asdasd" icon="asd" />
-                    <WhiteCard row={2} text="asdasd" icon="asd" />
+
+                    {
+                        unsereGrundwerte.map((item, index) => {
+                            return (
+
+                                <WhiteCard row={2} text={item.text} icon={item.icon} titleColumn={true} title={item.title} />
+                            )
+                        })
+                    }
                 </div>
 
             </section>
@@ -59,7 +64,7 @@ export const UberPage = () => {
                 <div className="unsereMissionRow">
 
                 </div>
-                
+
             </section>
 
             <OffiziellerPartner />

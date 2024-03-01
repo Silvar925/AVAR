@@ -5,35 +5,49 @@ export const WhiteCard = (props) => {
     let title = {}
     let sizeCard = {}
 
+    let centerStyle = {}
+
+    let image = {}
+
     if (props.titleColumn === true) {
         title = {
-            display: "flex", alignItems: "center", width: "370px", justifyContent: "space-between"
-        }
-        
-        sizeCard = {
-            width: "383px", height: "142px"
+            display: "flex", alignItems: "center",
+            width: "270px",
+            justifyContent: "space-between"
         }
 
     } else {
         title = {
-            display: "flex", alignItems: "center", justifyContent: "center"
+            display: "flex", alignItems: "center", justifyContent: "center",
+        }
+
+        sizeCard = {
+            // width: "383px", height: "142px"
         }
     }
 
     if (props.row === 1) {
         rowCard = {
-            justifyContent: "space-between",
+            flexDirection: "row",
+            alignItems: "center",
+            width: "230px"
         }
-    } else if (props.row >= 2) {
-        rowCard = {
-            flexDirection: "column",
-            gap: "10px",
-            alignItems: "center"
+
+        image = {
+            width: "25px",
+            height: "25px"
         }
     }
 
+    if (props.center === true) {
+        centerStyle = {
+            justifyContent: "center"
+        }
+    }
+
+
     return (
-        <div className={styles.card} style={{...sizeCard}}>
+        <div className={styles.card} style={{ ...sizeCard, ...rowCard, ...centerStyle }}>
             <div style={{ ...title }}>
 
                 {
@@ -41,14 +55,9 @@ export const WhiteCard = (props) => {
                     <h3 className={styles.title}>{props.title}</h3>
                 }
 
-                <img src={props.icon} alt="#" />
+                <img src={props.icon} alt="#" style={{...image}}/>
+
             </div>
-
-            {
-                props.row === 1 &&
-                <img src={props.icon} alt="#" />
-
-            }
 
             <p >{props.text}</p>
 

@@ -227,7 +227,9 @@
   }
 
   .cardList {
-    grid-gap: 12px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .statisticsContainer {
@@ -241,6 +243,7 @@
   }
 
   .UnsereAusgewahltenContainer {
+    margin-top: 50px;
     gap: 10px;
   }
 

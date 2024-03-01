@@ -123,7 +123,7 @@
     .einStarkesContainerTitle h1 {
         font-size: 24px;
     }
-    
+
     .unsereGrundwerteContainer {
         margin-top: 20px;
     }
@@ -138,5 +138,9 @@
 
     .unsereGrundwerteContainerText p {
         font-size: 14px;
+    }
+
+    .unsereGrundwerteListCard {
+        flex-direction: column;
     }
 }

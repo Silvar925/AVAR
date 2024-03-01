@@ -1,5 +1,20 @@
 .whiteButton {
     display: flex;
+    gap: 16px;
+    width: 290px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 10px 24px 10px;
+    font-family: 'Montserrat';
+
+    border-radius: 20px;
+    box-shadow: 0px 11px 17.7px 0px rgba(149, 149, 149, 0.25);
+    background: rgb(255, 255, 255);
+}
+
+.whiteButtonTransparency {
+    display: flex;
     align-items: center;
     font-family: 'Montserrat';
     font-size: 16px;
@@ -8,21 +23,7 @@
     border-radius: 67px;
 }
 
-.whiteButton img {
+.whiteButtonTransparency img {
     height: 30px;
     width: 30px;
-}
-
-@media (min-width: 320px) and (max-width: 435px) {
-    .redButton {
-        border-radius: 67px;
-        background-color: rgb(229, 86, 69);
-        color: white;
-        height: auto;
-        width: auto;
-        text-align: center;
-
-        font-family: 'Montserrat';
-        font-size: 14px;
-    }
 }
