@@ -1,0 +1,95 @@
+.bewertungenContainer {
+    margin-top: 63px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.bewertungenContainer_background {
+    display: flex;
+    background-image: url("Home/bewertungen.png");
+    width: 1972px;
+    height: 925px;
+}
+
+.bewertungenContainer_left {
+    width: 736px;
+    height: 925px;
+    backdrop-filter: blur(45.9px);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.bewertungenContainer_left_text {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    width: 440px;
+    height: 423px;
+    padding: 200px 250px;
+}
+
+.bewertungenContainer_left_text p {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.bewertungenContainer_right {
+    display: flex;
+    gap: 10px;
+    padding: 218px 32px;
+}
+
+.bewertungenContainer_upper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 58px;
+    margin-left: 250px;
+}
+
+.bewertungenContainer_upper p {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media (min-width: 320px) and (max-width: 435px) {
+    .bewertungenContainer_background {
+        flex-direction: column;
+    }
+
+    .bewertungenContainer_upper {
+        display: none;
+    }
+
+    .bewertungenContainer_left {
+        width: auto;
+        padding: 20px;
+        height: 566px;
+    }
+
+    .bewertungenContainer_left_text {
+        width: 100%;
+        gap: 10px;
+        padding: 0px;
+    }
+
+    .bewertungenContainer_left_text p {
+        width: 100%;
+    }
+
+    .bewertungenContainer_right {
+        display: none;
+    }
+
+    .bewertungenContainer_right {
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+}

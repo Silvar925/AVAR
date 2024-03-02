@@ -4,7 +4,9 @@ export function Header() {
     return (
         <header>
             <nav>
-                <img src="banners/AVAR_logo.png" alt="AVAR_logo" />
+                <a href="/">
+                    <img src="banners/AVAR_logo.png" alt="AVAR_logo" />
+                </a>
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="uber">Über uns</a></li>
@@ -15,7 +17,7 @@ export function Header() {
                 <a href="#" className="btnCallUS">Call US</a>
 
                 <div className="dropdown">
-                    <a href="#"><img src="icons/menuBurger.svg" alt="#" className="dropbtn"/></a>
+                    <a href="#"><img src="icons/menuBurger.svg" alt="#" className="dropbtn" /></a>
                     <div className="dropdown-content">
                         <a href="/">Home</a>
                         <a href="uber">Über uns</a>

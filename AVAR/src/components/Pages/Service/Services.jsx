@@ -5,6 +5,7 @@ import { WhiteCard } from "../../ui/WhiteCard/WhiteCard"
 import { UnserseService } from "../../blocks/UnsereService/UnsereService"
 import { TranslucentCard } from "../../ui/TranslucentCard/TranslucentCard"
 import { Footer } from "../../blocks/Footer/Footer"
+import { Bewertungen } from "../../blocks/Bewertungen/Bewertungen"
 
 
 export const ServicesPage = () => {
@@ -60,6 +61,8 @@ export const ServicesPage = () => {
                     }
                 </div>
             </section>
+
+            <Bewertungen />
 
             <Footer />
         </>

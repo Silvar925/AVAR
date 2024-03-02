@@ -1,0 +1,36 @@
+.card {
+    padding: 30px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    /* align-items: center; */
+    background: rgb(255, 255, 255);
+}
+
+.card_icon {
+    display: flex;
+}
+
+.card_text {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.card_text p {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.bewertungenContainer_left_text p {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}

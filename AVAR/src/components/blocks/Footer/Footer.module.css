@@ -85,6 +85,11 @@ footer {
     font-weight: 400;
 }
 
+.rowF {
+    display: flex;
+    gap: 40px;
+}
+
 @media (min-width: 320px) and (max-width: 435px) {
     footer {
         flex-direction: column;
@@ -95,13 +100,14 @@ footer {
     }
 
     .schaffenPerfektion {
-        width: 200px;
+        /* width: 200px; */
+        width: 100%;
         gap: 10px;
     }
 
     .schaffenPerfektion_text p {
         font-size: 12px;
-        width: 200px;
+        width: 100%;
     }
 
     .kontaktInformationen {
@@ -125,6 +131,11 @@ footer {
 
     .kontaktInformationen_adress p {
         font-size: 14px;
+    }
+
+    .rowF {
+        display: flex;
+        gap: 10px;
     }
 
 }

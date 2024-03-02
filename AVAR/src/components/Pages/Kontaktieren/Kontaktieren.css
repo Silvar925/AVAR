@@ -65,5 +65,32 @@
 }
 
 .MapContainer {
+    margin-top: 80px;
     display: flex;
+    height: 100px; 
+    width: 100px;
+}
+
+/* WirFreuenUnsContainer */
+@media (min-width: 320px) and (max-width: 435px) {
+    .WirFreuenUnsContainer {
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+
+    .WirFreuenUnsTittle h1 {
+        font-size: 30px;
+    }
+
+    .WirFreuenUnsSubtittle {
+        width: 100%;
+    }
+
+    .WirFreuenUnsText {
+        width: 100%;
+    }
+
+    .WirFreuenUnsListButton {
+        flex-direction: column;
+    }
 }

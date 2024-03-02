@@ -1,5 +1,6 @@
 .yourInterestContainer {
   padding-top: 100px;
+  margin-bottom: 160px;
   display: flex;
   justify-content: space-between;
   background-color: #FBFBFB;
@@ -43,6 +44,8 @@
   height: 777px;
   width: 1245px;
   top: -60px;
+  z-index: 1; /* Устанавливаем более высокий z-index, чтобы изображение было выше, чем у "forest" */
+
 }
 
 .forest {
@@ -51,7 +54,9 @@
 }
 
 .yourInterestContainer_right {
+  /* background-image: url("Home/forest.png"); */
   position: relative;
+  overflow: hidden;
 }
 
 
@@ -133,6 +138,10 @@
   gap: 40px;
 }
 
+.bottomContainer {
+  margin-top: 1050px;
+}
+
 @media (min-width: 320px) and (max-width: 435px) {
   .banner {
     padding: 20px;
@@ -178,6 +187,7 @@
   }
 
   .yourInterestContainer {
+    margin-top: 30px;
     gap: 0;
     padding: 0;
   }

@@ -145,6 +145,13 @@
         width: 254px;
         font-size: 14px;
     }
+
+
+    .additionalImage img {
+        width: 302px;
+        height: 409px;
+        margin-left: 120px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

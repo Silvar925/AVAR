@@ -24,6 +24,12 @@ export const Projekte = () => {
                     </p>
                 </div>
 
+                <div>
+                    sadfasdf
+                </div>
+
+                <div/>
+
                 <div className="KomplettModernisierungListCard">
                     <WhiteCard row={1} text="Design" icon="icons/coolicon.png" titleColumn={false} center={true} />
                     <WhiteCard row={1} text="Plan" icon="icons/coolicon.png" titleColumn={false} center={true} />
@@ -31,6 +37,8 @@ export const Projekte = () => {
                     <WhiteCard row={1} text="Fertigstellung" icon="icons/coolicon.png" titleColumn={false} center={true} />
                 </div>
             </section>
+
+
 
             <section className="feedbackTeamContainer">
                 <div className="feedbackTeamContainerText">
