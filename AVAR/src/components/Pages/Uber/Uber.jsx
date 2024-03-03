@@ -5,6 +5,7 @@ import { Footer } from "../../blocks/Footer/Footer"
 import { WhiteCard } from "../../ui/WhiteCard/WhiteCard"
 import { TranslucentCard } from "../../ui/TranslucentCard/TranslucentCard"
 import { OffiziellerPartner } from "../../blocks/OffiziellerPartner/OffiziellerPartner"
+import { BaseCard } from "../../ui/BaseCard/BaseCard"
 
 
 export const UberPage = () => {
@@ -27,10 +28,25 @@ export const UberPage = () => {
 
                 <div className="einStarkesContainerImages">
                     <div className="einStarkesContainerListCard">
-                        <TranslucentCard orientation="column" tittle="200+" text="Projekte jahrlich" />
-                        <TranslucentCard orientation="column" tittle="200+" text="Projekte jahrlich" />
-                        <TranslucentCard orientation="column" tittle="200+" text="Projekte jahrlich" />
-                        <TranslucentCard orientation="column" tittle="200+" text="Projekte jahrlich" />
+                        <BaseCard style="transparent" height="104px" width="284px" orientation="row">
+                            <img src="icons/coolicon.png" alt="#" />
+                            <p>Wirtschaftlich</p>
+                        </BaseCard>
+
+                        <BaseCard style="transparent" height="104px" width="284px" orientation="row">
+                            <img src="icons/coolicon.png" alt="#" />
+                            <p>Zuverlässig</p>
+                        </BaseCard>
+
+                        <BaseCard style="transparent" height="104px" width="284px" orientation="row">
+                            <img src="icons/coolicon.png" alt="#" />
+                            <p>Termintreu</p>
+                        </BaseCard>
+
+                        <BaseCard style="transparent" height="104px" width="284px" orientation="row">
+                            <img src="icons/coolicon.png" alt="#" />
+                            <p>Perfekt</p>
+                        </BaseCard>
                     </div>
                 </div>
             </section>

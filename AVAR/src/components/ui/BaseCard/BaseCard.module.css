@@ -1,0 +1,69 @@
+.whiteCard {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 11px 27.5px 0px rgba(149, 149, 149, 0.25);
+    background: rgb(255, 255, 255);
+}
+
+.whiteCard img {
+    height: 30px;
+    width: 30px;
+}
+
+.whiteCard p {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.whiteCard h1 {
+    font-family: 'Montserrat';
+    font-size: 40px;
+}
+
+.transparentCard {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    color: white;
+    backdrop-filter: blur(6px);
+}
+
+.transparentCard img {
+    height: 30px;
+    width: 30px;
+}
+
+.transparentCard p {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.transparentCard h1 {
+    font-family: 'Montserrat';
+    font-size: 40px;
+}
+
+@media (min-width: 320px) and (max-width: 435px) {
+    .transparentCard {
+        padding: 20px;
+        height: auto !important;
+        width: 210px !important;
+    }
+
+
+    .whiteCard {
+        height: 130px !important;
+        width: 350px !important;
+    }
+}

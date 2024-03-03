@@ -8,7 +8,7 @@ import { Footer } from "../../blocks/Footer/Footer"
 export const Projekte = () => {
     return (
         <>
-            <Banner info={bannerInfo.Projekte} type="slider" backgroundImage="Home" />
+            <Banner info={bannerInfo.Projekte} type="slider" backgroundImage="Home" right={true} />
 
             <section className="KomplettModernisierungContainer">
                 <div className="KomplettModernisierungTittle">
@@ -28,7 +28,7 @@ export const Projekte = () => {
                     sadfasdf
                 </div>
 
-                <div/>
+                <div />
 
                 <div className="KomplettModernisierungListCard">
                     <WhiteCard row={1} text="Design" icon="icons/coolicon.png" titleColumn={false} center={true} />
@@ -67,7 +67,7 @@ export const Projekte = () => {
 
             <OffiziellerPartner />
 
-            <Footer/>
+            <Footer />
 
         </>
     )

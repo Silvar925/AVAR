@@ -9,6 +9,8 @@ import { TranslucentCard } from "../../ui/TranslucentCard/TranslucentCard"
 import { UnsereAusgewahltenCard } from "../../ui/UnsereAusgewahltenCard/UnsereAusgewahltenCard"
 import { OffiziellerPartner } from "../../blocks/OffiziellerPartner/OffiziellerPartner"
 import { Bewertungen } from "../../blocks/Bewertungen/Bewertungen"
+import { BaseCard } from '../../ui/BaseCard/BaseCard';
+import { NewBanner } from '../../blocks/NewBanner/NewBanner';
 
 
 export const Home = () => {
@@ -34,7 +36,7 @@ export const Home = () => {
 
     return (
         <>
-            <Banner info={bannerInfo.Home} type="buttons" backgroundImage="Home" />
+            <Banner info={bannerInfo.Home} type="buttons" backgroundImage="Home"/>
 
             <section className="yourInterestContainer">
                 <div className="yourInterestContainer_left">
@@ -65,7 +67,8 @@ export const Home = () => {
                 </div>
 
             </section>
-{/* 
+
+            {/* 
             {switcher === false && <UnserseService />}
             {switcher === true && <UnsereServiceMobile />} */}
 
@@ -87,9 +90,10 @@ export const Home = () => {
                         {
                             warumUnsWahlen.map((item, index) => {
                                 return (
-                                    <>
-                                    </>
-                                    // <WhiteCard key={index} row={2} text={item.text} icon={item.icon} titleColumn={false} />
+                                    <BaseCard style="white" width="403px" height="214px">
+                                        <img src={item.icon} alt="#" />
+                                        <p>{item.text}</p>
+                                    </BaseCard>
                                 );
                             })
                         }
@@ -99,10 +103,25 @@ export const Home = () => {
 
                 <section className="statisticsContainer">
                     <div className="statisticsCardList">
-                        {/* <TranslucentCard orientation="row" tittle="200+" text="Projekte jahrlich" />
-                        <TranslucentCard orientation="row" tittle="20" text="Team von Handwerkern" />
-                        <TranslucentCard orientation="row" tittle="110%" text="Leistung" />
-                        <TranslucentCard orientation="row" tittle="1" text="Ziel" /> */}
+                        <BaseCard style="transparent" height="203px" width="299px">
+                            <h1>20</h1>
+                            <p>Projekte jahrlich</p>
+                        </BaseCard>
+
+                        <BaseCard style="transparent" height="203px" width="299px">
+                            <h1>20</h1>
+                            <p>Projekte jahrlich</p>
+                        </BaseCard>
+
+                        <BaseCard style="transparent" height="203px" width="299px">
+                            <h1>20</h1>
+                            <p>Projekte jahrlich</p>
+                        </BaseCard>
+
+                        <BaseCard style="transparent" height="203px" width="299px">
+                            <h1>20</h1>
+                            <p>Projekte jahrlich</p>
+                        </BaseCard>
                     </div>
                 </section>
 

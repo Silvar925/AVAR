@@ -6,6 +6,9 @@ import { UnserseService } from "../../blocks/UnsereService/UnsereService"
 import { TranslucentCard } from "../../ui/TranslucentCard/TranslucentCard"
 import { Footer } from "../../blocks/Footer/Footer"
 import { Bewertungen } from "../../blocks/Bewertungen/Bewertungen"
+import { BaseCard } from "../../ui/BaseCard/BaseCard"
+import { MySwiper } from "../../ui/Swiper/Swiper"
+
 
 
 export const ServicesPage = () => {
@@ -14,6 +17,7 @@ export const ServicesPage = () => {
             <Banner info={bannerInfo.Service} type="additionalText" backgroundImage="Service" />
 
             <section className="servicesPage">
+
                 {/* <UnserseService /> */}
 
                 <section className="sieWollenEinContainer">
