@@ -1,16 +1,30 @@
 .whiteButton {
     display: flex;
-    gap: 16px;
-    width: 290px;
-    height: 56px;
-    justify-content: center;
     align-items: center;
-    padding: 24px 10px 24px 10px;
-    font-family: 'Montserrat';
+    justify-content: center;
+    gap: 22px;
 
-    border-radius: 20px;
-    box-shadow: 0px 11px 17.7px 0px rgba(149, 149, 149, 0.25);
-    background: rgb(255, 255, 255);
+    border-radius: 67px;
+    background-color: white(229, 86, 69);
+    color: black;
+
+    font-family: 'Montserrat';
+    font-size: 16px;
+    padding: 15px;
+
+    border: 1px solid black;
+}
+
+.whiteButton img {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px; /* Добавляем отступ справа, чтобы создать промежуток между изображением и текстом */
+}
+
+
+.whiteButton:hover {
+    background-color: lightgray;
+    color: black;
 }
 
 .whiteButtonTransparency {
@@ -24,6 +38,7 @@
 }
 
 .whiteButtonTransparency img {
+    display: none;
     height: 30px;
     width: 30px;
 }

@@ -1,6 +1,5 @@
 .yourInterestContainer {
   padding-top: 100px;
-  margin-bottom: 160px;
   display: flex;
   justify-content: space-between;
   background-color: #FBFBFB;
@@ -44,7 +43,8 @@
   height: 777px;
   width: 1245px;
   top: -60px;
-  z-index: 1; /* Устанавливаем более высокий z-index, чтобы изображение было выше, чем у "forest" */
+  z-index: 1;
+  /* Устанавливаем более высокий z-index, чтобы изображение было выше, чем у "forest" */
 
 }
 
@@ -72,7 +72,6 @@
 }
 
 .warumWahlenContainer {
-  margin-top: 120px;
   display: flex;
   gap: 24px;
   flex-direction: column;
@@ -105,6 +104,7 @@
 }
 
 .statisticsContainer {
+  margin-top: 70px;
   display: flex;
   align-items: center;
   height: 1100px;
@@ -138,9 +138,6 @@
   gap: 40px;
 }
 
-.bottomContainer {
-  margin-top: 1050px;
-}
 
 @media (min-width: 320px) and (max-width: 435px) {
   .banner {

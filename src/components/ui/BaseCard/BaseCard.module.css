@@ -10,6 +10,14 @@
     background: rgb(255, 255, 255);
 }
 
+.whiteCard:hover {
+    cursor: pointer;
+}
+
+.whiteCard:hover p {
+    color: #E55645;
+}
+
 .whiteCard img {
     height: 30px;
     width: 30px;
@@ -24,6 +32,16 @@
 .whiteCard h1 {
     font-family: 'Montserrat';
     font-size: 40px;
+}
+
+.whiteCard a {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.whiteCard a:hover {
+    color: #E55645;
 }
 
 .transparentCard {

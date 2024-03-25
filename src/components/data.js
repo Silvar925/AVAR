@@ -52,39 +52,46 @@ export const cardImages = {
 export const warumUnsWahlen = [
     {
         icon: 'Rating/star.png',
-        text: "Wir Schaffen Perfektion"
+        text: "Wir Schaffen Perfektion",
+        alternativeText: 'Ein Team aus erfahrenen Handwerkern liefert Ihnen Qualität und Schnelligkeit.'
+
     },
 
     {
-        icon: 'Rating/avatar.png',
-        text: "Erfahrene Handwerker"
+        icon: 'Rating/avatar.svg',
+        text: "Erfahrene Handwerker",
+        alternativeText: 'Ein Team aus erfahrenen Handwerkern liefert Ihnen Qualität und Schnelligkeit.'
     },
 
     {
         icon: 'Rating/city.png',
-        text: "Neuste Techniken"
+        text: "Neuste Techniken",
+        alternativeText: 'Ein Team aus erfahrenen Handwerkern liefert Ihnen Qualität und Schnelligkeit.'
     },
 
     {
         icon: 'Rating/medal.png',
-        text: "Uber 25 Jahre Erfahrung"
+        text: "Uber 25 Jahre Erfahrung",
+        alternativeText: 'Ein Team aus erfahrenen Handwerkern liefert Ihnen Qualität und Schnelligkeit.'
     },
 
     {
         icon: 'Rating/watch.png',
-        text: "Qualitat Und Schnelligkeit Zugleich"
+        text: "Qualitat Und Schnelligkeit Zugleich",
+        alternativeText: 'Ein Team aus erfahrenen Handwerkern liefert Ihnen Qualität und Schnelligkeit.'
     },
 
     {
         icon: 'Rating/time.png',
-        text: "Fristgerechte Fertigstellung"
+        text: "Fristgerechte Fertigstellung",
+        alternativeText: 'Ein Team aus erfahrenen Handwerkern liefert Ihnen Qualität und Schnelligkeit.'
     }
 ]
 
 export const sieWollenEinAngebot = [
     {
         icon: 'icons/coolicon.png',
-        text: "Terminvereinbarung"
+        text: "Terminvereinbarung",
     },
 
     {

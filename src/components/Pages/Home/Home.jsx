@@ -1,42 +1,27 @@
-import React, { useState, useEffect } from 'react';
 import "./Home.css"
+import { WarumCard } from '../../ui/WarumCard/WarumCard';
 import { Banner } from "../../ui/Banner/Banner"
 import { bannerInfo, yourInterestContainer, warumUnsWahlen, unsereAusgewahlten } from "../../data"
 import { UnserseService, UnsereServiceMobile } from "../../blocks/UnsereService/UnsereService"
 import { Footer } from "../../blocks/Footer/Footer"
-import { WhiteCard } from "../../ui/WhiteCard/WhiteCard"
-import { TranslucentCard } from "../../ui/TranslucentCard/TranslucentCard"
 import { UnsereAusgewahltenCard } from "../../ui/UnsereAusgewahltenCard/UnsereAusgewahltenCard"
 import { OffiziellerPartner } from "../../blocks/OffiziellerPartner/OffiziellerPartner"
 import { Bewertungen } from "../../blocks/Bewertungen/Bewertungen"
 import { BaseCard } from '../../ui/BaseCard/BaseCard';
-import { NewBanner } from '../../blocks/NewBanner/NewBanner';
 
 
 export const Home = () => {
-    const [switcher, setSwitcher] = useState(false);
+    let styles = {}
 
-    useEffect(() => {
-        const updateSwitcher = () => {
-            if (window.innerWidth >= 320 && window.innerWidth <= 435) {
-                setSwitcher(true);
-            } else {
-                setSwitcher(false);
-            }
-        };
-
-        updateSwitcher();
-
-        window.addEventListener('resize', updateSwitcher);
-
-        return () => {
-            window.removeEventListener('resize', updateSwitcher);
-        };
-    }, []);
+    if (window.innerWidth >= 320 && window.innerWidth <= 435) {
+        styles = {
+            marginTop: '1000px'
+        }
+    }
 
     return (
         <>
-            <Banner info={bannerInfo.Home} type="buttons" backgroundImage="Home"/>
+            <Banner info={bannerInfo.Home} type="buttons" backgroundImage="Home" />
 
             <section className="yourInterestContainer">
                 <div className="yourInterestContainer_left">
@@ -68,12 +53,11 @@ export const Home = () => {
 
             </section>
 
-            {/* 
-            {switcher === false && <UnserseService />}
-            {switcher === true && <UnsereServiceMobile />} */}
+            {window.innerWidth >= 320 && window.innerWidth <= 435 ? <UnsereServiceMobile /> : <UnserseService />}
 
 
-            <div className="bottomContainer">
+
+            <div style={{ ...styles }}>
                 <section className="warumWahlenContainer" >
                     <div className="warumWahlenContainerTitle">
                         <h1>Warum Uns Wahlen?</h1>
@@ -87,16 +71,7 @@ export const Home = () => {
                     </div>
 
                     <div className="cardList">
-                        {
-                            warumUnsWahlen.map((item, index) => {
-                                return (
-                                    <BaseCard style="white" width="403px" height="214px">
-                                        <img src={item.icon} alt="#" />
-                                        <p>{item.text}</p>
-                                    </BaseCard>
-                                );
-                            })
-                        }
+                        {warumUnsWahlen.map((item, index) => { return (<WarumCard key={index} text={item.text} alternativeText={item.alternativeText} img={item.icon} />) })}
                     </div>
 
                 </section>
@@ -104,23 +79,23 @@ export const Home = () => {
                 <section className="statisticsContainer">
                     <div className="statisticsCardList">
                         <BaseCard style="transparent" height="203px" width="299px">
-                            <h1>20</h1>
-                            <p>Projekte jahrlich</p>
+                            <h1>200+</h1>
+                            <p>Projekte jährlich20</p>
                         </BaseCard>
 
                         <BaseCard style="transparent" height="203px" width="299px">
                             <h1>20</h1>
-                            <p>Projekte jahrlich</p>
+                            <p>Team von Handwerkern</p>
                         </BaseCard>
 
                         <BaseCard style="transparent" height="203px" width="299px">
-                            <h1>20</h1>
-                            <p>Projekte jahrlich</p>
+                            <h1>110%</h1>
+                            <p>Leistung</p>
                         </BaseCard>
 
                         <BaseCard style="transparent" height="203px" width="299px">
-                            <h1>20</h1>
-                            <p>Projekte jahrlich</p>
+                            <h1>1</h1>
+                            <p>Ziel</p>
                         </BaseCard>
                     </div>
                 </section>
@@ -130,6 +105,7 @@ export const Home = () => {
                         <h1>Unsere Ausgewahlten Projekte</h1>
                     </div>
 
+
                     <div className="UnsereAusgewahltenCardList">
                         {
                             unsereAusgewahlten.map((item, index) => {
@@ -138,6 +114,8 @@ export const Home = () => {
                                 );
                             })
                         }
+
+
                     </div>
 
                 </section>

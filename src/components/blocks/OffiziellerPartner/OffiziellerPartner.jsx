@@ -10,7 +10,7 @@ export const OffiziellerPartner = () => {
                 <h1>Offizieller Partner Der Postank</h1>
             </div>
 
-            <img src="Home/postbank.png" alt="postbankico" className="temp"/>
+            <img src="Home/postbank.png" alt="postbankico" className="temp" />
 
             <div className="offiziellerPartnerContainer_card">
                 <div className="offiziellerPartnerContainer_card_left">
@@ -28,7 +28,7 @@ export const OffiziellerPartner = () => {
 
                     <div className="offiziellerPartnerContainer_card_left_buttons">
                         <RedButton text="Kostenlose Beratung Sichern" />
-                        <WhiteButton text="Rufen Sie uns an" />
+                        <WhiteButton text="Rufen Sie uns an" transparency={false} img />
                     </div>
 
                 </div>

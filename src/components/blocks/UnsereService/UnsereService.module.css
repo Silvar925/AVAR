@@ -1,7 +1,7 @@
 .unsereServicesContainer {
     display: flex;
     justify-content: space-between;
-    padding: 160px 80px;
+    padding: 121px 80px;
 }
 
 .unsereServicesContainer_left {
@@ -19,8 +19,6 @@
     flex-direction: column;
     text-align: center;
     writing-mode: vertical-rl;
-    /* text-orientation: mixed; */
-    /* white-space: nowrap; */
 }
 
 .unsereServicesContainer_right h1 span:nth-child(1) {
@@ -35,7 +33,7 @@
 
 @media (min-width: 320px) and (max-width: 435px) {
     .unsereServicesContainer {
-        margin-top: 120px;
+        margin-top: 160px;
         flex-direction: column;
         margin-left: 10px;
         padding: 5px 48px;

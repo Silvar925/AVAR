@@ -1,7 +1,7 @@
 .bannerContainer {
     display: flex;
     flex-direction: column;
-    height: 805px;
+    height: 780px;
 }
 
 .textContainer {

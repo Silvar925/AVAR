@@ -1,11 +1,12 @@
 import styles from "./WhiteButton.module.css"
 
 export const WhiteButton = (props) => {
+    console.log(props.img)
 
     if (props.transparency === false) {
         return (
             <a href="#" className={styles.whiteButton}>
-                <img src={props.icon} alt="#" />
+                {props.img !== undefined && <img src="Home/call.png" alt="#" />}
                 {props.text}
             </a>
         )
