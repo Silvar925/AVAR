@@ -55,8 +55,6 @@ export const Home = () => {
 
             {window.innerWidth >= 320 && window.innerWidth <= 435 ? <UnsereServiceMobile /> : <UnserseService />}
 
-
-
             <div style={{ ...styles }}>
                 <section className="warumWahlenContainer" >
                     <div className="warumWahlenContainerTitle">

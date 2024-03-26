@@ -4,6 +4,8 @@
     justify-content: center;
     gap: 22px;
 
+    height: 30px;
+
     border-radius: 67px;
     background-color: white(229, 86, 69);
     color: black;

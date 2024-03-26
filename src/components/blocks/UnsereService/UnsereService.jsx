@@ -1,10 +1,9 @@
 import styles from "./UnsereService.module.css"
-import React, { useState, useEffect } from 'react';
 import { cardImages } from "../../data"
 import { unserseService } from "../../data"
 import { UnserseServiceCard } from "../../ui/UnserseServiceCard/UnserseServiceCard"
 
-export const UnsereServiceMobile = (props) => {
+export const UnsereServiceMobile = () => {
     return (
         <section className={styles.unsereServicesContainer}>
 

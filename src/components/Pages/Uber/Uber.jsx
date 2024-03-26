@@ -3,7 +3,6 @@ import { Banner } from "../../ui/Banner/Banner"
 import { bannerInfo, unsereGrundwerte } from "../../data"
 import { Footer } from "../../blocks/Footer/Footer"
 import { WhiteCard } from "../../ui/WhiteCard/WhiteCard"
-import { TranslucentCard } from "../../ui/TranslucentCard/TranslucentCard"
 import { OffiziellerPartner } from "../../blocks/OffiziellerPartner/OffiziellerPartner"
 import { BaseCard } from "../../ui/BaseCard/BaseCard"
 
@@ -29,22 +28,22 @@ export const UberPage = () => {
                 <div className="einStarkesContainerImages">
                     <div className="einStarkesContainerListCard">
                         <BaseCard style="transparent" height="104px" width="284px" orientation="row">
-                            <img src="icons/coolicon.png" alt="#" />
+                            <img src="UberPage\checkMark.png" alt="#" />
                             <p>Wirtschaftlich</p>
                         </BaseCard>
 
                         <BaseCard style="transparent" height="104px" width="284px" orientation="row">
-                            <img src="icons/coolicon.png" alt="#" />
+                            <img src="UberPage\checkMark.png" alt="#"/>
                             <p>Zuverlässig</p>
                         </BaseCard>
 
                         <BaseCard style="transparent" height="104px" width="284px" orientation="row">
-                            <img src="icons/coolicon.png" alt="#" />
+                            <img src="UberPage\checkMark.png" alt="#"/>
                             <p>Termintreu</p>
                         </BaseCard>
 
                         <BaseCard style="transparent" height="104px" width="284px" orientation="row">
-                            <img src="icons/coolicon.png" alt="#" />
+                            <img src="UberPage\checkMark.png" alt="#"/>
                             <p>Perfekt</p>
                         </BaseCard>
                     </div>
@@ -67,8 +66,7 @@ export const UberPage = () => {
                     {
                         unsereGrundwerte.map((item, index) => {
                             return (
-
-                                <WhiteCard row={2} text={item.text} icon={item.icon} titleColumn={true} title={item.title} />
+                                <WhiteCard key={index} row={2} text={item.text} icon={item.icon} titleColumn={true} title={item.title} />
                             )
                         })
                     }
@@ -77,11 +75,9 @@ export const UberPage = () => {
             </section>
 
             <section className="unsereMission">
-                <div className="unsereMissionRow">
-
-                </div>
-
+                <img src="unsereMission.png" alt="#"/>
             </section>
+
 
             <OffiziellerPartner />
 
